@@ -1,6 +1,0 @@
-framework module Pods_QuestionView {
-  umbrella header "Pods-QuestionView-umbrella.h"
-
-  export *
-  module * { export * }
-}
