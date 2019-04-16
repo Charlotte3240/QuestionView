@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		62ED98BE433A3339374B05C8 /* Pods_QuestionViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 719D36491B63E722086E9050 /* Pods_QuestionViewTests.framework */; };
 		699A1F3203174024CD7E8CB6 /* Pods_QuestionViewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC2CD9239778FA8B2015B0CE /* Pods_QuestionViewUITests.framework */; };
+		8417EFF62265781C00DA4FA0 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417EFF52265781B00DA4FA0 /* Question.swift */; };
 		8438679A22605EE1004C3B31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438679922605EE1004C3B31 /* AppDelegate.swift */; };
 		8438679F22605EE1004C3B31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8438679D22605EE1004C3B31 /* Main.storyboard */; };
 		843867A122605EE4004C3B31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843867A022605EE4004C3B31 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 		572CDD341C57BDC54AA0A4D5 /* Pods-QuestionViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestionViewTests.release.xcconfig"; path = "Target Support Files/Pods-QuestionViewTests/Pods-QuestionViewTests.release.xcconfig"; sourceTree = "<group>"; };
 		601E2873E3263E7C83C44245 /* Pods-QuestionViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestionViewUITests.release.xcconfig"; path = "Target Support Files/Pods-QuestionViewUITests/Pods-QuestionViewUITests.release.xcconfig"; sourceTree = "<group>"; };
 		719D36491B63E722086E9050 /* Pods_QuestionViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuestionViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8417EFF52265781B00DA4FA0 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		8438679622605EE1004C3B31 /* QuestionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuestionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8438679922605EE1004C3B31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8438679E22605EE1004C3B31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			children = (
 				8438679922605EE1004C3B31 /* AppDelegate.swift */,
 				843867C722605F0C004C3B31 /* RiskAssessmentController.swift */,
+				8417EFF52265781B00DA4FA0 /* Question.swift */,
 				8438679D22605EE1004C3B31 /* Main.storyboard */,
 				843867A022605EE4004C3B31 /* Assets.xcassets */,
 				843867A222605EE4004C3B31 /* LaunchScreen.storyboard */,
@@ -371,12 +374,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-QuestionView/Pods-QuestionView-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,6 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8417EFF62265781C00DA4FA0 /* Question.swift in Sources */,
 				843867C822605F0D004C3B31 /* RiskAssessmentController.swift in Sources */,
 				8438679A22605EE1004C3B31 /* AppDelegate.swift in Sources */,
 			);
